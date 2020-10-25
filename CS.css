@@ -1,0 +1,42 @@
+* {
+    font-family: 'Vollkorn', sans-serif;
+    font-size: {{fontSize}}px;
+}
+
+
+@keyframes ltr {
+    0% {
+        right: 0%;
+    }
+    100% {
+        right: 110%;
+    }
+}
+
+.event-container {
+    margin: 10px;
+    position: absolute;
+    height: 25px;
+    display: inline-block;
+    white-space: nowrap;
+    color: {{textColor}};
+    background: {{backgroundColor}};
+    animation: {{time}}s {{direction}} linear;
+}
+
+.event-container div {
+    padding: 5px;
+}
+
+#niconico-chat {
+    position: relative;
+}
+
+@keyframes rtl {
+    0% {
+        right: 110%;
+    }
+    100% {
+        right: -10%;
+    }
+}
